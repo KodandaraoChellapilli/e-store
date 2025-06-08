@@ -1,0 +1,101 @@
+$icon-font: 1.3em;
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 100%;
+  box-shadow: 5px 5px 20px gray;
+  padding: 1em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  margin-left: 2%;
+  padding: 0.8em;
+  width: 23%;
+}
+
+.inp-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 0.5em;
+  background-color: white;
+}
+
+.inp-container .dropdown {
+  width: 15%;
+  margin-right: 0.5em;
+}
+
+.select-btn {
+  height: 2.5em;
+  border: none;
+  background-color: #dadada;
+  font-weight: 600;
+  width: 100%;
+}
+
+.inp-container input {
+  width: 70%;
+  height: 2.5em;
+  margin-right: 0.5em;
+}
+
+.inp-container button {
+  width: 10%;
+  height: 2.5em;
+  border: none;
+  background-color: #dadada;
+}
+
+.login-container {
+  width: 15%;
+  color: white;
+  text-align: right;
+  margin: 1.7em 0.2em 0 0;
+}
+
+.user-icon {
+  margin-right: 0.4em;
+  padding: 0.2em;
+  font-size: $icon-font;
+}
+
+.auth-links {
+  display: inline-block;
+}
+
+.login-container h5,
+.login-container span {
+  display: inline-block;
+  margin: 0 0.2em;
+}
+
+.login-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart-wishlist {
+  width: 7%;
+  margin-top: 1.7em;
+  margin-left: 1em;
+}
+
+.cart-wishlist .list-icon {
+  color: white;
+  font-size: $icon-font;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 0.5em;
+}
