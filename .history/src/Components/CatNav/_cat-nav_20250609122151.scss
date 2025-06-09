@@ -1,0 +1,40 @@
+@import '../../style/sass/variables';
+@import '../../style/sass/mixins';
+
+
+.cat-nav-container {
+  background-color: #1e1e1e; // Dark background for nav
+  max-width: 100%; // Makes the nav bar take full width
+  border-top: 1px solid #444444; // Adds a subtle top border
+
+  .list-items {
+    list-style-type: none; // Removes bullets from the list
+    display: inline-block; // Aligns list items horizontally
+    margin: 0.2em 1em; // Space around each list item
+    padding: 0.4em; // Inner spacing
+    height: 2.5em; // Sets height of each item
+  }
+
+  a {
+    text-decoration: none; // Removes underline from links
+    color: white; // Makes link text white
+    height: 1.8em; // Sets height of the anchor tag
+    font-size: 0.9em; // Slightly smaller font
+    font-weight: 700; // Makes text bold
+
+    &::after {
+      content: ''; // Creates a fake element after <a>
+      display: block; // Makes it act like a visible block
+      bottom: 0; // Align it to bottom (needs position to work correctly)
+      left: 0; // Align it to left side
+      height: 0.2em; // Thin line height
+      background-color:$accent-color; // Line color
+      transform: scaleX(0); // Starts invisible
+      @include transition(transform, 0.2s )
+    }
+
+    &:hover::after {
+      transform: scaleX(1.1); // When hovering, stretch the line slightly
+    }
+  }
+}

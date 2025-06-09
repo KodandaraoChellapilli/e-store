@@ -1,8 +1,4 @@
-$icon-font: 1.3em;
-$element-height: 2.5em;
-* {
-  box-sizing: border-box;
-}
+@import '../../style/sass/variables';
 
 .header {
   max-width: 100%;

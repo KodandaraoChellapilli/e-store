@@ -12,7 +12,6 @@ function App() {
 
       <TopNav />
       <CatNav />
-      <MainComponent />
       
     </div>
   );
