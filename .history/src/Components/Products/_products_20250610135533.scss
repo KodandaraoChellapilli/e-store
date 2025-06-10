@@ -1,0 +1,15 @@
+@import '../../style/sass/mixins';
+
+.product-card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 3px 1px 14px 0px lightgray;
+    border-radius: 0.6em;
+
+    .product-image-container{
+        img{
+            margin-left: 8%;
+            border-radius: 0.4em
+        }
+    }
+}

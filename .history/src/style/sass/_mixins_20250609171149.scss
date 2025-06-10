@@ -4,7 +4,7 @@
 }
 
 
-@mixin underline-transition($width){
+@mixin underline-transition(){
      &::after {
       content: ''; // Creates a fake element after <a>
       display: block; // Makes it act like a visible block
@@ -17,19 +17,6 @@
     }
 
     &:hover::after {
-      transform: scaleX($width); // When hovering, stretch the line slightly
+      transform: scaleX(1.1); // When hovering, stretch the line slightly
     }
-}
-
-@mixin style-reset-a-li{
-  a{
-    text-decoration: none;
-    color: black;
-    &:hover{
-      color: black;
-    }
-  } 
-  li{
-    list-style-type: none;
-  }
 }

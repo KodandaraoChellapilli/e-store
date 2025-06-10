@@ -1,0 +1,9 @@
+@mixin transition($property, $duration) {
+  transition-property: $property;
+  transition-duration: $duration;
+}
+
+
+@mixin underline-transition(){
+    
+}

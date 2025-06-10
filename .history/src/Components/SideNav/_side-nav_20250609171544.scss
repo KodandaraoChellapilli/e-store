@@ -1,11 +1,10 @@
-@import "../../style/sass/mixins";
-@import "../../style/sass/variables";
+@import 
 
 .side-nav{
     margin-top: 1em;
     padding: 0.6em;
     box-shadow: 1px 0px 14px 0px lightgray;
-    height: 97%;
+    height: 51em;
     border-radius: 1em;
 
 
@@ -29,7 +28,6 @@
             a{
                 text-decoration: none; // Removes underline from linls
                 color: black; // Makes link text black
-                @include underline-transition(0.3); // Applies underline transition effect
             }
         }
     }

@@ -7,9 +7,10 @@ const MainComponent =()=> {
     return (
         <div>
             <div className='container-fluid'>
-                <div className='row'>
-
-                     <div className='col-lg-2 col-md-3 col-sm-4'>
+                <div>
+                    
+                </div>
+                <div className='col-lg-2 col-md-3 col-sm-4'>
                     <SideNav/>
                 </div>
 
@@ -18,11 +19,6 @@ const MainComponent =()=> {
                     <Products/>
 
                 </div>
-
-
-
-                </div>
-               
             </div>
         </div>
     )
